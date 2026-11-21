@@ -19,72 +19,6 @@ Obsługa programu odbywa się przez prosty interfejs CLI w terminalu UART.
 - Automatyczne ustawianie wartości domyślnych, jeżeli zmienne nie istnieją.
 - Pomijanie zapisu do NVS, gdy nowa wartość jest identyczna z poprzednią.
 
-### Obsługiwane typy danych
-
-| Typ | Przykład |
-|---|---|
-| `int` | `100` |
-| `float` | `24.5` |
-| `bool` | `true` / `false` |
-| `string` | `Rocket` |
-
-## Dostępne komendy CLI
-
-| Komenda | Opis |
-|---|---|
-| `save` | Zapis nowej zmiennej |
-| `change` | Zmiana wartości istniejącej zmiennej |
-| `read` | Odczyt zmiennej |
-| `delete` | Usunięcie zmiennej |
-| `show` | Wyświetlenie wszystkich zmiennych |
-| `help` | Wyświetlenie dostępnych komend |
-
-### Przykład użycia
-
-```text
-Command: save
-Insert your variable:
-*type* *name* *value*
-int counter 100
-Variable saved!
-
-Command: read
-counter
-type: int
-name: counter
-value: 100
-
-Command: change
-counter 200
-Variable updated!
-Old value: 100
-New value: 200
-
-Command: show
-Saved variables:
-int counter 200
-```
-
-Jeżeli użytkownik spróbuje ustawić tę samą wartość, program pominie zapis:
-
-```text
-Command: change
-counter 200
-Value unchanged. NVS write skipped!
-```
-
-## Wartości domyślne
-
-Przy uruchomieniu program sprawdza, czy istnieją następujące zmienne:
-
-| Nazwa | Typ | Wartość domyślna |
-|---|---|---|
-| `engine_power` | `int` | `50` |
-| `fuel_limit` | `float` | `75.5` |
-| `safety_mode` | `bool` | `true` |
-| `project_name` | `string` | `Flash` |
-
-Jeżeli zmienna nie istnieje, program zapisuje jej wartość domyślną. Istniejące wartości nie są nadpisywane podczas restartu.
 
 ## Ograniczenia pamięci Flash
 
@@ -96,30 +30,6 @@ Dodatkowo podczas modyfikowania zmiennych program porównuje nową wartość z p
 
 Pozwala to ograniczyć niepotrzebne operacje zapisu.
 
-## Struktura projektu
-
-```text
-pamiec_flash/
-├── CMakeLists.txt
-├── main/
-│   ├── main.c
-│   └── CMakeLists.txt
-└── components/
-    ├── flash_manage/
-    │   ├── flash_manage.c
-    │   ├── flash_manage.h
-    │   └── CMakeLists.txt
-    └── CLI/
-        ├── interface_actions.c
-        ├── interface_actions.h
-        ├── interface_view.c
-        ├── interface_view.h
-        └── CMakeLists.txt
-```
-
-- **flash_manage** – obsługa pamięci NVS i operacji na zmiennych.
-- **CLI** – obsługa komend użytkownika, menu i komunikacji z terminalem.
-- **main** – inicjalizacja pamięci, UART i uruchomienie programu.
 
 ## Kompilacja i uruchomienie
 
@@ -155,7 +65,3 @@ Podczas testów sprawdzono działanie interfejsu CLI oraz operacji na zmiennych 
 - Pomijanie zapisu do NVS, gdy wartość zmiennej nie uległa zmianie.
 
 Program wykorzystuje rzeczywistą pamięć Flash mikrokontrolera ESP32.
-
-## Autor
-
-[Maciej Grylewicz]
