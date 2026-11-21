@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/home/maciej-grylewicz/Dokumenty/projekty_esp32/rekrutacja_inspace/zadanie_1_software/pamiec_flash/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}
