@@ -1,0 +1,3 @@
+/home/maciej-grylewicz/Dokumenty/projekty_esp32/temp_rekrutacja/can_sym/build/CMakeFiles/can_sim.dir
+/home/maciej-grylewicz/Dokumenty/projekty_esp32/temp_rekrutacja/can_sym/build/CMakeFiles/edit_cache.dir
+/home/maciej-grylewicz/Dokumenty/projekty_esp32/temp_rekrutacja/can_sym/build/CMakeFiles/rebuild_cache.dir
